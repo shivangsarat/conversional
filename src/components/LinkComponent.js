@@ -14,9 +14,21 @@ export const LinkComponent = (props) => {const [styles, setStyles] = useState({}
             }
         }
         setStyles(style);
-    },[])
+    },[]);
+    const handleButtonClick = () => {
+        console.log("inside handleButtonClick in LinkComponent")
+        props.cb('modal', true)
+    }
     return (
-        <a style={styles} className={props.className} id={props.id} href={props.props.url} target='_blank'>
+        <a
+            style={styles}
+            className={props.className}
+            id={props.id}
+            // href="#"
+            href={props.props.url ? props.props.url : "#"}
+            target={props.props.url ? '_blank' : null}
+            onClick={props.props.url ? null : handleButtonClick}
+        >
             {props.props.text}
         </a>
     )

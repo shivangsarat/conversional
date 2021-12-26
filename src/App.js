@@ -8,7 +8,7 @@ function App() {
   const [componentData, setComponentData] = useState({})
   useEffect(() => {
     $.ajax({
-      url: '/data2.json',
+      url: '/data.json',
       dataType:'json',
       cache: false,
       success: (data) => {
