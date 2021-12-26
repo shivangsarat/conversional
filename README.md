@@ -51,7 +51,7 @@ You can understand more abot the this project in below sections:
 
 ### Toggling between JSON files:
 
-In App.js [Line 11]([https://github.com/shivangsarat/conversional/blob/main/src/App.js#L11]) you can update the name of JSON file to use your new JSON Configuration
+In App.js [Line 11](https://github.com/shivangsarat/conversional/blob/main/src/App.js#L11) you can update the name of JSON file to use your new JSON Configuration
 
 ### Analyzing the Bundle Size
 
