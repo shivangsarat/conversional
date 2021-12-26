@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 export const LinkComponent = (props) => {const [styles, setStyles] = useState({})
     useEffect(() => {
         let style = {};
-        if (props.props) {
+        if (props && props.props) {
             for (const key in props.props) {
                 if (key === 'borderSize') {
                     style['borderWidth'] = props.props[key];
@@ -28,6 +28,7 @@ export const LinkComponent = (props) => {const [styles, setStyles] = useState({}
             href={props.props.url ? props.props.url : "#"}
             target={props.props.url ? '_blank' : null}
             onClick={props.props.url ? null : handleButtonClick}
+            rel="noopener noreferrer"
         >
             {props.props.text}
         </a>

@@ -17,7 +17,7 @@ export const ModalComponent = (props) => {
             }
         }
         setStyles(style);
-    }, [])
+    }, [props.props])
     const handleModalClose = (e) => {
         setOpen(false)
     }

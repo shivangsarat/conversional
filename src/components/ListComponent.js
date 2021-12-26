@@ -15,7 +15,7 @@ export const ListComponent = (props) => {
             }
         }
         setStyles(style);
-    }, [])
+    }, [props.props])
     return (
         <ul style={styles} className={props.className} id={props.id}>
             {props.props.li.map((item, index) => {

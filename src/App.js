@@ -1,5 +1,4 @@
 import {useEffect, useState} from 'react';
-import logo from './logo.svg';
 import './App.css';
 import $ from 'jquery';
 import { RennderComponents } from './components/RenderComponent';
@@ -8,7 +7,7 @@ function App() {
   const [componentData, setComponentData] = useState({})
   useEffect(() => {
     $.ajax({
-      url: '/data.json',
+      url: '/data2.json',
       dataType:'json',
       cache: false,
       success: (data) => {

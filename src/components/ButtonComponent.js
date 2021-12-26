@@ -15,7 +15,7 @@ export const ButtonComponent = (props) => {
             }
         }
         setStyles(style);
-    }, [])
+    }, [props.props])
     const handleButtonClick = () => {
         props.cb('modal', true)
     }

@@ -14,7 +14,7 @@ export const H2Component = (props) => {const [styles, setStyles] = useState({})
             }
         }
         setStyles(style);
-    }, [])
+    }, [props.props])
     return (
         <h2 style={styles} className={props.className} id={props.id}>
             {props.props.text}

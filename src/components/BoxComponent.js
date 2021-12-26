@@ -15,7 +15,7 @@ export const BoxComponent = (props) => {
             style['border'] = "2px solid black"
         }
         setStyles(style)
-    }, [])
+    }, [props.props])
     return (
         <div style={styles} className={props.className} id={props.id}>
             {props.children}

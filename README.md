@@ -1,10 +1,16 @@
-# Getting Started with Create React App
+# Getting Started with Conversional Mini Project App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm i`
+
+Installs all the required dependencies from package.json.
+
+This command will create node_module/ directory and package-lock.json file.
 
 ### `npm start`
 
@@ -39,15 +45,13 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## More About this Project
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+You can understand more abot the this project in below sections:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Toggling between JSON files:
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+In App.js [Line 11]([https://github.com/shivangsarat/conversional/blob/main/src/App.js#L11]) you can update the name of JSON file to use your new JSON Configuration
 
 ### Analyzing the Bundle Size
 

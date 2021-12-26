@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 export const ParagraphComponent = (props) => {const [styles, setStyles] = useState({})
     useEffect(() => {
         let style = {};
-        if (props.props) {
+        if (props && props.props) {
             for (const key in props.props) {
                 if (key === 'borderSize') {
                     style['borderWidth'] = props.props[key];
