@@ -48,7 +48,6 @@ export const RennderComponents = config => {
                 id: config.Content.id ? config.Content.id : null,
                 cb: handleClick,
                 open: openModal,
-                // onClick: handleClick
             },
             children.length > 0 && children.map( c => RennderComponents(c))
         )
