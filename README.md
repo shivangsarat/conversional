@@ -96,5 +96,6 @@ Individual Components and its renderComponent are inside [src/components/](https
 * For adding extra props of openModal on Link click comment line 35 and uncomment line 36.
 * This project is currently made on the given JSON data with assumption of no change in key name and data structure is consistent throughout the project.
 * [Mini project pdf provided](https://firebasestorage.googleapis.com/v0/b/gorgias-templates-production.appspot.com/o/attachments%2F4757a6c5-d53c-41df-8112-30e5b342b52a.pdf?alt=media&token=3719a471-7639-4578-8eca-4c47e3b57b26).
+* Assumption is that only *one JSON configuration* is considered at a time
 
 ---
