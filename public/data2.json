@@ -46,7 +46,8 @@
 					"Content": {
 						"type": "ButtonComponent",
 						"props": {
-							"text": "Click me to open the modal"
+							"text": "Click me to open the modal",
+							"openModal": true
 						}
 					}
 				},

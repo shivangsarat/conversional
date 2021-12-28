@@ -17,7 +17,11 @@ export const ButtonComponent = (props) => {
         setStyles(style);
     }, [props.props])
     const handleButtonClick = () => {
-        props.cb('modal', true)
+        if (props.props && props.props.openModal && props.props.openModal === true) {
+            props.cb('modal', true)
+        } else {
+            console.log("this button is clicked")
+        }
     }
     return (
         <button style={styles} className={props.className} id={props.id} onClick={handleButtonClick}>

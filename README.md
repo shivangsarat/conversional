@@ -20,11 +20,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
@@ -35,31 +30,63 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
 ## More About this Project
 
 You can understand more abot the this project in below sections:
 
-### Toggling between JSON files:
+### Versions
 
-In App.js [Line 11](https://github.com/shivangsarat/conversional/blob/main/src/App.js#L11) you can update the name of JSON file to use your new JSON Configuration
+Node: `v16.13.0`
+npm: `8.1.0`
 
-### Analyzing the Bundle Size
+### Toggling between JSON files
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+In [App.js Line 11](https://github.com/shivangsarat/conversional/blob/main/src/App.js#L11) you can update the name of JSON file to use your new JSON Configuration.
 
-### Making a Progressive Web App
+### Additional Requirements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+For Additional requirements Section in the problem statement, if key `url` is not passed in props of `LinkElement` it'll open the modal.
+
+For deciding which links and buttons open modal, an extra props could be passed as `openModal` with `boolean` value. If the button/link consists of the prop, it'll triger modal [currently updated in data2.json](https://github.com/shivangsarat/conversional/blob/main/public/data2.json#L50) in case of a button. Similar could be done in case of LinkComponent or similarly other keys could be added for different functionalities/behaviours.
+
+### File Structure
+
+- conversional
+    - public
+        - data.json
+        - data2.json
+    - src
+        - App.js
+        - components
+            - BoxComponent
+            - ButtonComponent
+            - H1Component
+            - H2Component
+            - LinkComponent
+            - ListComponent
+            - ModalComponent
+            - ParagraphComponent
+            - RenderComponent
+
+- [BoxComponent](https://github.com/shivangsarat/conversional/blob/main/src/components/BoxComponent.js)
+- [ButtonComponent](https://github.com/shivangsarat/conversional/blob/main/src/components/ButtonComponent.js)
+- [H1Component](https://github.com/shivangsarat/conversional/blob/main/src/components/H1Component.js)
+- [H2Component](https://github.com/shivangsarat/conversional/blob/main/src/components/H2Component.js)
+- [LinkComponent](https://github.com/shivangsarat/conversional/blob/main/src/components/LinkComponent.js)
+- [ListComponent](https://github.com/shivangsarat/conversional/blob/main/src/components/ListComponent.js)
+- [ModalComponent](https://github.com/shivangsarat/conversional/blob/main/src/components/ModalComponent.js)
+- [ParagraphComponent](https://github.com/shivangsarat/conversional/blob/main/src/components/ParagraphComponent.js)
+
+- [RenderComponent](https://github.com/shivangsarat/conversional/blob/main/src/components/RenderComponent.js)
+
+RenderComponent is in turn called by [src/App.js in line 23](https://github.com/shivangsarat/conversional/blob/main/src/App.js#L23) with the json data of components.
+
+
+#### JSON files
+
+JSON files are located in [public/](https://github.com/shivangsarat/conversional/tree/main/public) directory.
+
+Individual Components and its renderComponent are inside [src/components/](https://github.com/shivangsarat/conversional/tree/main/src/components) directory.
 
 ### Advanced Configuration
 
