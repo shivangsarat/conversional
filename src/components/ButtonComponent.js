@@ -22,6 +22,8 @@ export const ButtonComponent = (props) => {
         } else {
             console.log("this button is clicked")
         }
+
+        // props.cb('modal', true)
     }
     return (
         <button style={styles} className={props.className} id={props.id} onClick={handleButtonClick}>

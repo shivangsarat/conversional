@@ -88,14 +88,13 @@ JSON files are located in [public/](https://github.com/shivangsarat/conversional
 
 Individual Components and its renderComponent are inside [src/components/](https://github.com/shivangsarat/conversional/tree/main/src/components) directory.
 
-### Advanced Configuration
+---
+**Note/Comments/Assumptions**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+* For normal case scenario for modal open on button click in data2.json without extra props of openModal comment line 20 - 24 and uncomment Line 26. (Without any addition of props in configuration json file)
+* For normal case scenario for modal open on Link click in data2.json without extra props of openModal uncomment line 19 - 23 and comment Line 25. (Without any addition of props in configuration json file)
+* For adding extra props of openModal on Link click comment line 35 and uncomment line 36.
+* This project is currently made on the given JSON data with assumption of no change in key name and data structure is consistent throughout the project.
+* [Mini project pdf provided](https://firebasestorage.googleapis.com/v0/b/gorgias-templates-production.appspot.com/o/attachments%2F4757a6c5-d53c-41df-8112-30e5b342b52a.pdf?alt=media&token=3719a471-7639-4578-8eca-4c47e3b57b26).
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
